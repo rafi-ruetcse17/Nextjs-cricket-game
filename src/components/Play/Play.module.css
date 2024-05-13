@@ -1,0 +1,229 @@
+/* background-color: #1aac83; */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.center-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-elements div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-2 div {
+    text-align: center;
+}
+
+
+/* .scoreboard{
+    margin-top: 30px;
+} */
+.first-innings {
+    color: green;
+}
+
+.second-innings {
+    color: #e7195a;
+}
+
+.table {
+    width: 280px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table thead tr th,
+.table tbody tr td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    /* background-color: #1aac83; */
+}
+
+.table thead tr th {
+    background-color: #1c8265;
+}
+
+.clicked {
+    background: #e7195a;
+    color: #fff;
+}
+
+.not-clicked {
+    background: #1aac83;
+    color: #fff;
+}
+
+.select-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-team button {
+    background: #1aac83;
+    padding: 10px;
+    border: #1aac83;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.select-team button:hover {
+    background-color: #1c8265;
+    color: #fff;
+}
+
+.separate {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.batting {
+    border: 2px solid #1aac83;
+    width: 150px;
+}
+
+.wicket {
+    background-color: #e7195a;
+    color: #fff;
+    border: 3px solid wheat;
+    padding: 3px;
+}
+
+.runs {
+    background-color: #27ae60;
+    color: #fff;
+    border: 3px solid wheat;
+    padding: 3px;
+}
+
+.currentOver {
+    display: inline-block;
+    padding: 3px 5px;
+    color: #fff;
+    background-color: #27ae60;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.error {
+    color: #e7195a;
+}
+
+/* Your CSS file or style section */
+
+.toss {
+    display: inline-block;
+    padding: 23px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #1aac83;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #1aac83;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toss:hover {
+    background-color: #1c8265;
+    color: #fff;
+}
+
+.summary {
+    background-color: #27ae60;
+    color: #fff;
+    border: 3px solid wheat;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.summary:hover {
+    background-color: #e7195a;
+}
+
+.tossButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-50px) rotate(180deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(360deg);
+    }
+
+    75% {
+        transform: translateY(50px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.tossResult {
+
+    font-size: 24px;
+    animation: rollAnimation 2s ease-out;
+    position: relative;
+    text-align: center;
+}
+
+.tossResult p {
+    position: absolute;
+    top: 100%;
+    transform: translate(-140%, -50%);
+}
+
+.summray-button {
+    margin-top: 50px;
+}
+.winner{
+    border: 3px solid wheat;
+    border-radius: 3px;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .table {
+        width: 100px;
+    }
+    .batting{
+        width: 50px;
+    }
+
+}

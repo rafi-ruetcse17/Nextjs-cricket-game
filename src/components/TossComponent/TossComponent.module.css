@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.center-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-elements div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toss {
+    display: inline-block;
+    padding: 23px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #1aac83;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #1aac83;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toss:hover {
+    background-color: #1c8265;
+    color: #fff;
+}
