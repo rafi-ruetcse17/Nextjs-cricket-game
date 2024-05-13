@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api_endpoint = '/api/score';
-const API = axios.create({ baseURL: "http://localhost:3001" })
+const API = axios.create({ baseURL: "http://localhost:3000" })
 
 API.interceptors.request.use((req)=>{
     req.headers["Content-Type"] = "application/json";
